@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="health_care.css">
+    <title>Health Care</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <form class="d-flex col-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquise produtos"
+                            aria-label="Search">
+                        <button class="btn btn-success" type="submit">Pesquisar</button>
+                    </form>
+                    <button class="navbar-toggler" id="menu-bar" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item">
+                                <a id="produtos" class="nav-link active text-success fw-bold" href="#"
+                                    onclick="scrollToSection('secao1')">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sobre" class="nav-link active text-success fw-bold" href="#"
+                                    onclick="scrollToSection('sobreNos')">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="contato" class="nav-link active text-success fw-bold" href="#"
+                                    onclick="scrollToSection('footer')">Contato</a>
+                            </li>
+                        </ul>
+                        <a class="nav-link navbar-brand fw-bold"
+                            style="font-family: 'Cantarell', sans-serif; padding-left: 5vh;" href="#">Health Care!</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="fundo">
+                <div class="container">
+                    <div class="left-side col-6">
+                        <h1 class="fst-italic fw-bold text-white">Health Care</h1>
+                        <h5 class=" text-white">Tudo se resume a saúde e cuidado!</h5>
+                    </div>
+                    <div class="right-side col-6">
+                        <div id="amostra">
+                            <p class="text-white">Seu parceiro
+                                para uma vida mais saudável. <br>
+                                Com nossos cursos, você terá acesso às ferramentas e orientações necessárias para
+                                transformar seus objetivos de bem-estar físico e mental em realidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="secao1">
+            <div id="triade">
+                <h1 style="margin-top: 8vh; margin-bottom: 8vh; text-align: center;" class="fw-bold">A saúde e o
+                    bem-estar
+                    começa aqui!</h1>
+                <div class="container mt-6" id="cursos">
+                    <div class="cursos rounded  p-3 col-sm mt-3">
+                        <div class="card-body">
+                            <h4>EDUCAÇÃO FÍSICA</h4>
+                            <p class="text-black-50 fw-bold">Desenvolva um corpo saudável e conheça o seu potencial por
+                                meio
+                                do
+                                autoconhecimento e das técnicas mais eficazes de Educação Física</p>
+                            <div class="icone"><img class="amostra" src="img/ed_fisica.png" loading="lazy"></div>
+                        </div>
+                    </div>
+                    <div class="cursos rounded  p-3 col-sm offset-md-2 mt-3">
+                        <div class="card-body">
+                            <h4>YOGA</h4>
+                            <p class="text-black-50 fw-bold">Aprimore sua harmonia interior e descubra o
+                                autoconhecimento
+                                por
+                                meio
+                                das práticas do Yoga.</p>
+                            <div class="icone"><img class="amostra" src="img/yoga.png" loading="lazy"></div>
+                        </div>
+                    </div>
+                    <div class="cursos rounded  p-3 col-sm offset-md-2 mt-3">
+                        <div class="card-body">
+                            <h4>MEDITAÇÃO</h4>
+                            <p class="text-black-50 fw-bold">Conquiste a serenidade mental e explore o potencial do seu
+                                eu
+                                interior
+                                com as técnicas de meditação mais eficazes.</p>
+                            <div class="icone"><img class="amostra" src="img/meditação.png" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-6" id="btn-curso">
+                    <div class="col-sm mt-3 btn-mais"><button class="btn" onclick="edFisica()">Quero saber mais</button>
+                    </div>
+                    <div class="col-sm offset-md-2 mt-3 btn-mais"><button class="btn" onclick="Yoga()">Quero saber
+                            mais</button></div>
+                    <div class="col-sm offset-md-2 mt-3 btn-mais"><button class="btn" onclick="Meditacao()">Quero saber
+                            mais</button></div>
+                </div>
+            </div>
+        </section>
+        <!-- Carrossel -->
+        <div id="sobreNos">
+            <h1 style="margin-top: 20vh; margin-bottom: 5vh; text-align: center;" class="fw-bold">Sobre nós </h1>
+            <div class="container">
+                <p style="margin-top: 2vh;" class="text-black-50 sobreNos">
+                    A <span class="fw-bold">Health Care</span> é uma empresa criada com o propósito de auxiliar
+                    indivíduos em todas as etapas da vida a
+                    alcançar uma rotina mais saudável, por meio de exercícios físicos, aplicação de
+                    autoconhecimento e incentivo ao bem-estar. <br><br>
+                    Colaboramos com especialistas altamente qualificados nas áreas de Samyama (Meditação),
+                    Educação Física e Yoga. <br>
+                    <span class="text-decoration-underline">
+                        Não se trata apenas de aulas com exercícios eficazes,
+                        mas também da jornada do autoconhecimento e autocuidado.
+                    </span> <br>
+                    Nós acreditamos que uma mente saudável e um corpo em forma
+                    são a chave para uma vida leve e feliz. <br><br>
+                    <span class="fst-italic fw-bold">
+                        Descubra como cuidar do seu corpo e da sua
+                        mente, alcançando níveis de saúde e felicidade que você merece.
+                    </span>
+                </p>
+                <div class="containers">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <img src="img/yoga-slide.jpg" loading="lazy" alt="">
+                        </label>
+                        <label class="card" for="item-2" id="song-2">
+                            <img src="img/exercicio.jpg" loading="lazy" alt="">
+                        </label>
+                        <label class="card" for="item-3" id="song-3">
+                            <img src="img/meditação-slide.jpg" loading="lazy" alt="">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer-content">
+                <h3 class="mb-5">Contatos</h3>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.instagram.com/tcc_healthcare">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Ingridbeca.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId)
+            if (secao1) {
+                section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+            }
+            else if (sobreNos) {
+                section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+            }
+            else if (footer) {
+                section.scrollIntoView({ behavior: "smooth", block: "start", inline: "start", });
+            }
+        }
+        function edFisica() {
+            window.location.href = "ed_fisica.html"
+        }
+        function Yoga() {
+            window.location.href = "yoga.html"
+        }
+        function Meditacao() {
+            window.location.href = "meditação.html"
+        }
+        /*$(function () {
+            $('#escondido').hide();
+            $('#leia-mais').click(function () { 
+                $('#escondido').slideToggle();
+
+                if ($('#leia-mais').text() === 'Leia Mais') {
+                    $('#leia-mais').text('Leia Menos');
+                } else {
+                    $('#leia-mais').text('Leia Mais');
+                }
+            });
+        });
+        let menu = document.getElementById('#menu-bar');
+        let navbar = document.getElementById('#navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }*/
+    </script>
+</body>
+
+</html>
